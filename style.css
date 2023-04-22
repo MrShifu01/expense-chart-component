@@ -1,0 +1,244 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft red: hsl(10, 79%, 65%)
+- Cyan: hsl(186, 34%, 60%)
+
+### Neutral
+
+- Dark brown: hsl(25, 47%, 15%)
+- Medium brown: hsl(28, 10%, 53%)
+- Cream: hsl(27, 66%, 92%)
+- Very pale orange: hsl(33, 100%, 98%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Font
+
+- Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
+- Weights: 400, 700 */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+body {
+    background-color: hsl(27, 66%, 92%);
+    
+}
+
+/* Positioning the overall application in the center of the page */
+.container-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 180px;
+    gap: 23px;
+}
+
+/* ************* */
+/* Top Container */
+/* ************* */
+
+/* Working with the top container */
+.top-container {
+    background-color: hsl(10, 79%, 65%);
+    border: none;
+    border-radius: 20px;
+    width: 500px;
+    height: 120px;
+}
+
+/* working with the top conent */
+.top-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 35px;
+}
+
+/* working with the balance conatiner */
+.balance-container {
+    font-family: "DM Sans", sans-serif;
+    color: hsl(33, 100%, 98%);
+}
+
+/* working with the balance header */
+.balance-header {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+/* working with the balance amount */
+.balance-amount {
+    font-size: 31px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* working with the logo */
+.logo-container {
+    padding-top: 16px;
+}
+
+/* **************** */
+/* Bottom Container */
+/* **************** */
+
+/* working with the bottom container */
+.bottom-container {
+    width: 500px;
+    height: auto;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(33, 100%, 98%);
+    font-family: "DM Sans", sans-serif;
+}
+
+/* working with the bottom content */
+.bottom-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling the heading */
+.heading {
+    font-weight: 700;
+    font-size: 29px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+
+/* **************** */
+/* CHART            */
+/* **************** */
+
+
+/* Styling the chart container */
+.chart-container {
+    height: 245px;
+    width: auto;
+}
+
+/* Styling the chart/list */
+.chart-list {
+    display: flex;
+    gap: 15px;
+    padding-left: 0;
+    padding-top: 30px;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: flex-end;
+    list-style-type: none;
+}
+
+/* Styling list items headings */
+li {
+    font-weight: 400;
+    color: hsl(28, 10%, 53%);
+    font-size: 14px;
+}
+
+/* Styling the day heading and columns */
+.day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.mon-bar {
+    background-color: hsl(10, 79%, 65%);
+    width: 48px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+}
+.tue-bar {
+    background-color: hsl(10, 79%, 65%);
+    width: 48px;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+}
+.wed-bar {
+    background-color: hsl(186, 34%, 60%);
+    width: 48px;
+    height: 150px;
+    border: none;
+    border-radius: 5px;
+}
+.thu-bar {
+    background-color: hsl(10, 79%, 65%);
+    width: 48px;
+    height: 90px;
+    border: none;
+    border-radius: 5px;
+}
+.fri-bar {
+    background-color: hsl(10, 79%, 65%);
+    width: 48px;
+    height: 70px;
+    border: none;
+    border-radius: 5px;
+}
+.sat-bar {
+    background-color: hsl(10, 79%, 65%);
+    width: 48px;
+    height: 120px;
+    border: none;
+    border-radius: 5px;
+}
+.sun-bar {
+    background-color: hsl(10, 79%, 65%);
+    width: 48px;
+    height: 80px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* **************** */
+/* Footer           */
+/* **************** */
+
+
+/* Styling the <hr> line */
+hr {
+    border: 1px solid hsl(27, 66%, 92%);
+    width: 425px;
+    margin-top: 0;
+}
+
+/* Styling the footer-container */
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styling the total conatiner */
+.total-container {
+    margin-left: 37px
+}
+
+/* Styling the total-heading */
+.total-heading {
+    color: hsl(28, 10%, 53%);
+    font-size: 18px;
+}

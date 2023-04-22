@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Expenses chart component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,28 +14,72 @@
 </head>
 <body>
 
-  My balance
-  $921.48
+<div class="container-wrapper">
+  <div class="top-container">
+    <div class="top-content">
+      <div class="balance-container">
+        <p class="balance-header">My balance</p>
+        <p class="balance-amount">$921.48</p>
 
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      </div>
+      <div class="logo-container">
+        <svg width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#382314" cx="48" cy="24" r="24"/><circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23"/></g></svg>
+      </div>
+    </div>
   </div>
+  <div class="bottom-container">
+    <div class="bottom-content">
+      <div class="heading">Spending - Last 7 days</div>
+      <div class="chart-container">
+        <ul class="chart-list">
+          <li class="day" id="mon">
+            <div class="mon-bar"></div>
+            <span>mon</span>
+          </li>
+          <li class="day">
+            <div class="tue-bar"></div>
+            <span>tue</span>
+          </li>
+          <li class="day">
+            <div class="wed-bar"></div>
+            <span>wed</span>
+          </li>
+          <li class="day">
+            <div class="thu-bar"></div>
+            <span>thu</span>
+          </li>
+          <li class="day">
+            <div class="fri-bar"></div>
+            <span>fri</span>
+          </li>
+          <li class="day">
+            <div class="sat-bar"></div>
+            <span>sat</span>
+          </li>
+          <li class="day">
+            <div class="sun-bar"></div>
+            <span>sun</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        <hr>
+        <div class="footer-container">
+          <div class="total-container">
+            <p class="total-heading">Total this month</p>
+            <p class="total-amount">$478.33</p>
+          </div>
+          <div class="percentage-container">
+            <p class="percentage-amount">+2.4%</p>
+            <p class="percentage-text">from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
