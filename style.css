@@ -45,7 +45,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 180px;
+    padding-top: 175px;
+    padding-bottom: 175px;
     gap: 23px;
 }
 
@@ -141,7 +142,7 @@ body {
     display: flex;
     gap: 15px;
     padding-left: 0;
-    padding-top: 30px;
+    padding-top: 50px;
     margin-bottom: 0;
     justify-content: center;
     align-items: flex-end;
@@ -169,6 +170,7 @@ li {
     height: 50px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 .tue-bar {
     background-color: hsl(10, 79%, 65%);
@@ -176,6 +178,7 @@ li {
     height: 100px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 .wed-bar {
     background-color: hsl(186, 34%, 60%);
@@ -183,6 +186,7 @@ li {
     height: 150px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 .thu-bar {
     background-color: hsl(10, 79%, 65%);
@@ -190,6 +194,7 @@ li {
     height: 90px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 .fri-bar {
     background-color: hsl(10, 79%, 65%);
@@ -197,6 +202,7 @@ li {
     height: 70px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 .sat-bar {
     background-color: hsl(10, 79%, 65%);
@@ -204,14 +210,66 @@ li {
     height: 120px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 .sun-bar {
+    position: relative;
     background-color: hsl(10, 79%, 65%);
     width: 48px;
     height: 80px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
+
+.sun-bar::before {
+    opacity: 0;
+    content: "$31.07";
+    font-family: "MD Sans", sans-serif;
+    font-size: 0.9em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:hsl(27, 66%, 92%);
+    position: absolute;
+    background-color: black;
+    bottom: 110%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 55px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+.sun-bar:hover::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    opacity: 0.3;
+    width: 48px;
+    height: 80px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sun-bar:hover::before {
+    opacity: 1;
+}
+
+.sun-bar:hover,
+.mon-bar:hover,
+.tue-bar:hover,
+.wed-bar:hover,
+.thu-bar:hover,
+.fri-bar:hover,
+.sat-bar:hover
+{
+    opacity: 1;
+}
+
 
 /* **************** */
 /* Footer           */
@@ -222,7 +280,8 @@ li {
 hr {
     border: 1px solid hsl(27, 66%, 92%);
     width: 425px;
-    margin-top: 0;
+    margin-top: 35px;
+    margin-bottom: 10px;
 }
 
 /* Styling the footer-container */
@@ -240,5 +299,33 @@ hr {
 /* Styling the total-heading */
 .total-heading {
     color: hsl(28, 10%, 53%);
-    font-size: 18px;
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+
+.total-amount {
+    font-size: 2.3rem;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.percentage-container {
+    padding-right: 37px;
+}
+
+.percentage-amount {
+    font-size: 1em;
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.percentage-text {
+    color: hsl(28, 10%, 53%);
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
 }
